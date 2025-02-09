@@ -4,26 +4,25 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: "./index.js",
+  entry: "./index.js",  // ✅ No 'src/' since it's in root now
   output: {
-    filename: 'bundle.js',
+    filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
   devServer: {
     open: true,
     host: "localhost",
-    watchFiles: 'index.html',
+    watchFiles: ["index.html"],  // ✅ Ensure it watches index.html in root
   },
-  context: path.join(__dirname, 'src'),
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: './assets/', to: './assets/' },
+        { from: "./assets/", to: "assets/" },  // ✅ Copy from root assets
       ],
     }),
     new HtmlWebpackPlugin({
-      template: "index.html",
-      inject: 'body',
+      template: "./index.html", // ✅ Ensure it's the root index.html
+      inject: "body",
     }),
   ],
   module: {

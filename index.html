@@ -1,188 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
     <header id="header">
-        
         <button class="subHeader" id="profile">Profile</button>
         <button class="subHeader" id="interests">Interests</button>
         <button class="subHeader" id="projects">Projects</button>
         <button class="subHeader" id="demo">Demo</button>
-        
-
     </header>
-    <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body class="body">
-       
-        <div id="profileSection" class="card">
-            <div class="innerCard">
-                <div class="circleContainer">
-                    <img id="profilepic" src="assets/profile.jpg">
-                </div>
-                <h1>Connor Flynn   ~   My Portfolio</h1>
-                <h3 id="centerNeed">
-                    Hello! My name is Connor and I am a Junior studying Computer Science
-                    at the University of Illinois at Urbana-Champaign. I am an aspiring Software Developer 
-                    looking to make impacts in Full Stack Development 
-                </h3>
 
-                
+    <div id="profileSection" class="card">
+        <div class="innerCard">
+            <div class="circleContainer">
+                <img id="profilepic" src="assets/profile.jpg"> <!-- Ensure image exists -->
             </div>
+            <h1>Connor Flynn ~ My Portfolio</h1>
+            <h3 id="centerNeed">
+                Hello! My name is Connor and I am a Junior studying Computer Science at the 
+                University of Illinois at Urbana-Champaign. I am an aspiring Software Developer 
+                looking to make impacts in Full Stack Development.
+            </h3>
         </div>
-        <div id="interestSection">
-            <h1 id="title"> My Interests </h1>
-            
-            <div class="info">
+    </div>
+
+    <div id="interestSection">
+        <h1 id="title"> My Interests </h1>
+        
+        <div class="info">
             <button id="mlBtn" class="skill">
                 <div class="circleIcon">
-                    <i class="fa fa-line-chart" id="database"></i>
+                    <i class="fa-solid fa-chart-line"></i>
                 </div>
                 <h1> Machine Learning </h1>
-                
             </button>
             <button id="dsBtn" class="skill">
                 <div class="circleIcon">
-                    <i class="fa fa-database" id="database"></i>
+                    <i class="fa-solid fa-database"></i>
                 </div>
                 <h1> Database Systems</h1>
             </button>
             <button id="wpBtn" class="skill">
                 <div class="circleIcon">
-                    <i class="fa fa-code" id="database"></i>
+                    <i class="fa-solid fa-code"></i>
                 </div>
                 <h1> Web Programming</h1>
             </button>
-
-            
-            </div>
-
-            </div>
-
-            <div id="mlModal" class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                      <span id="mlClose" class="close">&times;</span>
-                      <h2>Machine Learning</h2>
-                    </div>
-                    <div class="modal-body">
-                      <p> Currently taking CS441 - Applied Machine Learning </p>
-                      <p> Experience working with Classification and Regression Models</p>
-                      <p> Strong foundations in python ML libraries such as scikit-learn and numpy</p>
-                    </div>
-                    
-                </div>
-            </div>
-
-            
-            <div id="dsModal" class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                      <span id="dsClose" class="close">&times;</span>
-                      <h2>Database Systems</h2>
-                    </div>
-                    <div class="modal-body">
-                      <p>I have taken CS411 - Database Systems</p>
-                      <p>Well versed in SQL, Neo4j, and MongoDB </p>
-                      <p>Implemented a MySQL database as part of a full stack project working with UIUC apartments</p>
-                    </div>
-                   
-                </div>
-            </div>
-
-            <div id="wpModal" class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                      <span id="wpClose" class="close">&times;</span>
-                      <h2>Web Programming</h2>
-                    </div>
-                    <div class="modal-body">
-                      <p>Currently taking CS409 - The Art of Web Programming</p>
-                      <p>Experienced in HTML, CSS, Javascript, Python</p>
-                      <p>I have worked with stacks such as Node.js, Django, and Flask</p>
-                      <p>I have completed multiple projects including a Recipe web app, Apartment Finder web app, and this portfolio!</p>
-                    </div>
-                
-                </div>
-            </div>
-
         </div>
-        <div id="projectSection" class="card">
-            <div class="innerCard">
-                <div class="slider">
-                    <h1> My Projects </h1>
-                    
-                    <div class="slide">
-                      <h1> UIUC Apartment Finder</h1>
-                      <p> Developed a Full stack web application that provided UIUC students with the ability to easily find apartments</p>
-                      <p> Web application streamlined the apartment finding process</p>
-                      <p> Used CSS, HTML, and Javascript within the Node.js framework</p>
-                    </div>
-              
-                     
-                    <div class="slide">
-                      <h1> Recipe Web Application</h1>
-                      <p> Developed a Web Application that allowed users to find recipes based on an image they took or manually entering ingredients</p>
-                      <p> Utilized the Spoonacular API for recipes and the Google Cloud Vision API to read and analyze user images</p>
-                      <p> Used CSS, HTML, Javascript, Python, and the Django framework</p>
-                      <a href="https://github.com/cflynn19/Cooking-Recipe-Web-Application"> GitHub </a>
-                    </div>
-              
-                    
-                    <div class="slide">
-                      <h1> GitHub Social Network </h1>
-                      <p> Implemented an undirected social graph of github users from a database</p>
-                      <p> Created functionality to find recommended users and groups to conect with</p>
-                      <p> Used C++ for all functionalities</p>
-                      <a href="https://github.com/eihart123/cs-225-final-project"> GitHub </a>
-                    </div>
-              
-                
-                    <div id="titleSlide" class="slide">
-                        
-                        <img src="assets/devicon.png" >
-                      
-                    </div>
-              
-                    
-                    <button class="btn btn-next"></button>
-                    <button class="btn btn-prev"></button>
-                  </div>
+    </div>
 
+    <div id="projectSection" class="card">
+        <div class="innerCard">
+            <div class="slider">
+                <h1> My Projects </h1>
                 
+                <div class="slide">
+                    <h1> UIUC Apartment Finder</h1>
+                    <p> Developed a Full stack web application that provided UIUC students with the ability to easily find apartments.</p>
+                </div>
+
+                <div class="slide">
+                    <h1> Recipe Web Application</h1>
+                    <p> Developed a Web Application that allowed users to find recipes based on an image or manually entered ingredients.</p>
+                    <p> Utilized the Spoonacular API and Google Cloud Vision API.</p>
+                    <p> Used Django framework.</p>
+                    <a href="https://github.com/cflynn19/Cooking-Recipe-Web-Application"> GitHub </a>
+                </div>
+
+                <div id="titleSlide" class="slide">
+                    <img src="assets/devicon.png"> <!-- Ensure correct path -->
+                </div>
+
+                <button class="btn btn-next"></button>
+                <button class="btn btn-prev"></button>
             </div>
         </div>
-       
+    </div>
 
-        <div id="videoSection">
-            <h1 id="videoTitle"> Here is a video of me demoing the Recipe Web Application I helped build!</h1>
-            <video id="video" controls>  
-                <source src="assets/videoPart3.mp4" type="video/mp4">
-            </video>
-        </div>
+    <div id="videoSection">
+        <h1 id="videoTitle">Demo of Recipe Web Application</h1>
+        <video id="video" controls>  
+            <source src="assets/videoPart3.mp4" type="video/mp4">
+        </video>
+    </div>
 
-
-        <footer>
-            <div class="info">
-                <div class="footerInfo">
-                    <h2> My Socials </h2>
-                    <a href="https://www.linkedin.com/in/connor-flynn-253960228/" class="fa fa-linkedin"></a>
-                    <a href="https://github.com/cflynn19" class="fa fa-github" id="github"></a>
-                </div>
-                <div class="footerInfo">
-                    <h2> Contact Me: </h2>
-
-                    <a href="mailto:cjflynn2@illinois.edu" class="email"> cjflynn2@illinois.edu </a>
-                    
-                </div>
-                
+    <footer>
+        <div class="info">
+            <div class="footerInfo">
+                <h2> My Socials </h2>
+                <a href="https://www.linkedin.com/in/connor-flynn-253960228/" class="fa-brands fa-linkedin"></a>
+                <a href="https://github.com/cflynn19" class="fa-brands fa-github"></a>
             </div>
-        </footer>
+            <div class="footerInfo">
+                <h2> Contact Me: </h2>
+                <a href="mailto:cjflynn2@illinois.edu">cjflynn2@illinois.edu</a>
+            </div>
+        </div>
+    </footer>
 
-
-
-    </body>
+    
+</body>
 </html>
+

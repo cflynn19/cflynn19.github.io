@@ -1,16 +1,16 @@
-if (window.location.hostname.includes("github.io")) {
-    __webpack_public_path__ = "./";
-  }
+// if (window.location.hostname.includes("github.io")) {
+//     __webpack_public_path__ = "./";
+//   }
 /*
  * This is the main entry point for Webpack, the compiler & dependency loader.
  * All files that are necessary for your web page and need to be 'watched' for changes should be included here!
  */
 
 // HTML Files
-import './index.html';
+import 'index.html';
 
 // Stylesheets
-import './css/main.scss';
+import 'css/main.scss';
 
 // Scripts
-import './js/main.js';
+import 'js/main.js';

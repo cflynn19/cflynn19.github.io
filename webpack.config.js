@@ -43,6 +43,10 @@ module.exports = {
         test: /\.html$/i,
         loader: "html-loader",
       },
+      {
+        test: /\.(mp4)$/i,
+        type: "asset/resource",
+      },
     ],
   },
 };

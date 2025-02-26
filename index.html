@@ -24,7 +24,7 @@
             </div>
             <h1>Connor Flynn ~ My Portfolio</h1>
             <h3 id="centerNeed">
-                Hello! My name is Connor and I am a Junior studying Computer Science at the 
+                Hello! My name is Connor and I am a Senior studying Computer Science at the 
                 University of Illinois at Urbana-Champaign. I am an aspiring Software Developer 
                 looking to make impacts in Full Stack Development.
             </h3>
@@ -39,27 +39,28 @@
                 <div class="circleIcon">
                     <i class="fa-solid fa-chart-line"></i>
                 </div>
-                <h1> Machine Learning </h1>
+                <h1> Full Stack Development </h1>
             </button>
             <button id="dsBtn" class="skill">
                 <div class="circleIcon">
                     <i class="fa-solid fa-database"></i>
                 </div>
-                <h1> Database Systems</h1>
+                <h1> Mobile App Development</h1>
             </button>
             <button id="wpBtn" class="skill">
                 <div class="circleIcon">
                     <i class="fa-solid fa-code"></i>
                 </div>
-                <h1> Web Programming</h1>
+                <h1> Machine Learning </h1>
             </button>
         </div>
     </div>
 
     <div id="projectSection" class="card">
-        <div class="innerCard">
+        <div class="innerCard" id="sliderInnerCard">
+            <h1> My Projects </h1>
             <div class="slider">
-                <h1> My Projects </h1>
+                
                 
                 <div class="slide">
                     <h1> UIUC Apartment Finder</h1>
@@ -74,12 +75,36 @@
                     <a href="https://github.com/cflynn19/Cooking-Recipe-Web-Application"> GitHub </a>
                 </div>
 
-                <div id="titleSlide" class="slide">
-                    <img src="assets/devicon.png"> <!-- Ensure correct path -->
+                <div class="slide">
+                    <h1> Recipe Web Application</h1>
+                    <p> Developed a Web Application that allowed users to find recipes based on an image or manually entered ingredients.</p>
+                    <p> Utilized the Spoonacular API and Google Cloud Vision API.</p>
+                    <p> Used Django framework.</p>
+                    <a href="https://github.com/cflynn19/Cooking-Recipe-Web-Application"> GitHub </a>
                 </div>
+
+                <!-- <div id="titleSlide" class="slide"> -->
+                    <!-- <img src="assets/devicon.png"> -->
+                <!-- </div> -->
 
                 <button class="btn btn-next"></button>
                 <button class="btn btn-prev"></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="projectSection" class="card">
+        <div class="innerCard">
+            <div id="carousel-wrapper">
+                <div id="menu">
+                    <div id="current-option">
+                      <span id="current-option-text1" data-previous-text="" data-next-text=""></span>
+                      <span id="current-option-text2" data-previous-text="" data-next-text=""></span>
+                    </div>
+                    <button id="previous-option"></button>
+                    <button id="next-option"></button>
+                </div>
+                <div id="image"></div>
             </div>
         </div>
     </div>

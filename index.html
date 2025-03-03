@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MP1</title>
+    <title> Connor Flynn </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
@@ -22,7 +22,7 @@
             <div class="circleContainer">
                 <img id="profilepic" src="84973a6a0915afa725b1.jpg"> <!-- Ensure image exists -->
             </div>
-            <h1>Connor Flynn ~ My Portfolio</h1>
+            <h1>Connor Flynn | My Portfolio</h1>
             <h3 id="centerNeed">
                 Hello! My name is Connor and I am a Senior studying Computer Science at the 
                 University of Illinois at Urbana-Champaign. I am an aspiring Software Developer 
@@ -60,13 +60,37 @@
         <div class="innerCard" id="sliderInnerCard">
             <h1> My Projects </h1>
             <div class="slider">
-                
-                
+
+                <div class="slide">
+                    <h1> Machine Learning Trading Strategy</h1>
+                    <p> Implemented and fine-tuned 2 Recurrent Neural Network (RNN) models in Python predicting the spot price of cryptocurrency 
+                        Spot ETFs</p>
+                    <p> Created a back testing script that streamlined historical IEX order book data into a data pipeline to simulate day trading, proving 
+                        the profitability of our trading strategy with both models for 100% of the 200 files tested</p>
+                    <p> Integrated ML Ops with the ML Flow API to enable efficient tracking, and visualization of past model runs, parameters, metrics, 
+                        and artifacts, which improved model management and reproducibility </p>
+                    <a href="https://gitlab.engr.illinois.edu/ie421_high_frequency_trading_spring_2024/ie421_hft_spring_2024_group_10/group_10_project"> GitLab </a>
+                </div>
+
+                <div class="slide">
+                    <h1> Planterra </h1>
+                    <p> Collaborated with a small team to develop and deploy on Heroku a full MERN (MondoDB, Express.js, React.js, Node.js) stack 
+                        web application leveraging the Perenual API to let users view specific details on their plants and receive plant-care notifications</p>
+                    <p> Utilized firebase authentication in conjunction with a MongoDB database to handle user login information and metadata securely, 
+                        ensuring industry best practices and data integrity policies were maintained</p>
+                    <p> Designed an intuitive and responsive user interface for the application that optimized user experience through modern design 
+                        principles, improved usability, and securing cross-platform compatibility </p>
+                </div>
+
                 <div class="slide">
                     <h1> UIUC Apartment Finder</h1>
-                    <p> Developed a Full stack web application that provided UIUC students with the ability to easily find apartments.</p>
+                    <p> Produced a Node.js web application that enabled UIUC students and users to search through 150+ apartments in the Champaign 
+                        area based on over 20 different preference filters, allowing each user a unique and personalized experience</p>
+                    <p> Hosted and integrated a 5 table MySQL database that stored leasing, location, user, building, and distance information, while 
+                        building queries that handled all necessary CRUD operations in the application</p>
                 </div>
 
+                
                 <div class="slide">
                     <h1> Recipe Web Application</h1>
                     <p> Developed a Web Application that allowed users to find recipes based on an image or manually entered ingredients.</p>
@@ -74,37 +98,35 @@
                     <p> Used Django framework.</p>
                     <a href="https://github.com/cflynn19/Cooking-Recipe-Web-Application"> GitHub </a>
                 </div>
-
+                
                 <div class="slide">
-                    <h1> Recipe Web Application</h1>
-                    <p> Developed a Web Application that allowed users to find recipes based on an image or manually entered ingredients.</p>
-                    <p> Utilized the Spoonacular API and Google Cloud Vision API.</p>
-                    <p> Used Django framework.</p>
-                    <a href="https://github.com/cflynn19/Cooking-Recipe-Web-Application"> GitHub </a>
+                    <h1> GitHub Social Network Graph</h1>
+                    <p> Implemented an undirected social network graph of over 37,000 GitHub users using C++ and CMake</p>
+                    <p> Two main goals in mind: group communities of users and provide users with a list of recommended users to follow</p>
+                    <p> Personally responsible with implementing the Girvan-Newman algorithm which created these groups of communities by removing edges, as well as creating test cases and test graphs for our BFS algorithm</p>
+                    <a href="https://github.com/eihart123/cs-225-final-project"> GitHub </a>
                 </div>
 
+                <div class="slide">
+                    <h1> NASA APOD UI</h1>
+                    <p> I created a new and improved UI for NASA's APOD data using React</p>
+                    <p>  Implemented multiple viewing screens for the collections of data and added unique endpoints for every image from the API</p>
+                    <p> Added search capabilities, as well as filters which allows users to find, filter, and sort images throughout different viewing screens</p>
+                </div>
+
+                <div class="slide">
+                    <h1> RESTful API </h1>
+                    <p> Designed a Node.js and Express.js RESTful API that maintained users and task information within a MongoDB database</p>
+                    <p> Included POST, PUT, DELETE, and GET routes for both Users and Tasks</p>
+                </div>
+
+                
                 <!-- <div id="titleSlide" class="slide"> -->
                     <!-- <img src="assets/devicon.png"> -->
                 <!-- </div> -->
 
                 <button class="btn btn-next"></button>
                 <button class="btn btn-prev"></button>
-            </div>
-        </div>
-    </div>
-
-    <div id="projectSection" class="card">
-        <div class="innerCard">
-            <div id="carousel-wrapper">
-                <div id="menu">
-                    <div id="current-option">
-                      <span id="current-option-text1" data-previous-text="" data-next-text=""></span>
-                      <span id="current-option-text2" data-previous-text="" data-next-text=""></span>
-                    </div>
-                    <button id="previous-option"></button>
-                    <button id="next-option"></button>
-                </div>
-                <div id="image"></div>
             </div>
         </div>
     </div>
@@ -120,12 +142,12 @@
         <div class="info">
             <div class="footerInfo">
                 <h2> My Socials </h2>
-                <a href="https://www.linkedin.com/in/connor-flynn-253960228/" class="fa-brands fa-linkedin"></a>
-                <a href="https://github.com/cflynn19" class="fa-brands fa-github"></a>
+                <a href="https://www.linkedin.com/in/connor-flynn-253960228/" class="fa-brands fa-linkedin" id="linkedin"></a>
+                <a href="https://github.com/cflynn19" class="fa-brands fa-github" id="github"></a>
             </div>
             <div class="footerInfo">
                 <h2> Contact Me: </h2>
-                <a href="mailto:cjflynn2@illinois.edu">cjflynn2@illinois.edu</a>
+                <a href="mailto:cjflynn2@illinois.edu" id="email">cjflynn2@illinois.edu</a>
             </div>
         </div>
     </footer>
@@ -133,4 +155,6 @@
     
 <script defer src="bundle.js"></script></body>
 </html>
+
+
 

@@ -1,29 +1,45 @@
 # cflynn19.github.io
 
-Welcome to my personal portfolio website!  
-This site showcases my projects, experience, and interests in web development and software engineering.
+My personal site — a single page covering what I'm working on now, where I've worked,
+and the projects worth looking at.
 
-### 🌐 Live Site  
-You can view it here: [cflynn19.github.io](https://cflynn19.github.io)
-
----
-
-## ✨ Features
-
-- Responsive single-page design
-- Sticky and dynamic navigation bar
-- Smooth scrolling between sections
-- Project carousel and modal previews
-- Embedded video content
-- Custom CSS animations and styling
-- FontAwesome icons and social media links
+**Live:** [cflynn19.github.io](https://cflynn19.github.io)
 
 ---
 
-## 🛠 Built With
+## Structure
 
-- HTML5  
-- SCSS (compiled to CSS)  
-- JavaScript (ES6)
+One page, four sections: About → Experience → Projects → Contact.
 
+- `index.html` — all the markup and content
+- `css/main.scss` — design tokens, layout, components
+- `js/main.js` — one `IntersectionObserver` that highlights the nav link for the section
+  you're reading. Everything else (smooth scrolling, the sticky header, responsive
+  layout) is CSS.
+- `assets/` — profile photo and project screenshots
 
+No framework. Light and dark themes both come from CSS custom properties, following the
+visitor's `prefers-color-scheme`.
+
+## Running it
+
+```bash
+npm install
+npm start          # webpack dev server, opens localhost
+```
+
+## Deploying
+
+GitHub Pages serves the **`gh-pages`** branch, which holds the webpack build — not the
+source in `master`. `index.html` has no `<script>` or stylesheet tag of its own because
+`HtmlWebpackPlugin` injects them at build time, so opening the source file directly won't
+show a styled page.
+
+```bash
+npm run build      # -> dist/
+npm run deploy     # gh-pages -d dist
+```
+
+## Built with
+
+HTML · SCSS · vanilla ES6 · webpack · Font Awesome

@@ -2,159 +2,326 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Connor Flynn </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <title>Connor Flynn — Software Engineer</title>
+    <meta name="description" content="Connor Flynn is a software engineer in Palo Alto, CA. Junior Software Engineer at Recovery Database Network (OPENLANE) and technical lead on Wovyn, a Flutter + Firebase reading platform.">
+    <meta name="author" content="Connor Flynn">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Connor Flynn — Software Engineer">
+    <meta property="og:description" content="Software engineer in Palo Alto. Flutter, Firebase, TypeScript. Building Wovyn, Flow, and port-doctor.">
+    <meta property="og:url" content="https://cflynn19.github.io/">
+    <meta property="og:image" content="https://cflynn19.github.io/assets/profile.jpg">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232e4e67'/%3E%3Ctext x='50' y='68' font-family='system-ui,sans-serif' font-size='52' font-weight='600' fill='%23fff' text-anchor='middle'%3ECF%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-    <header id="header">
-        <button class="subHeader" id="profile">Profile</button>
-        <button class="subHeader" id="interests">Interests</button>
-        <button class="subHeader" id="projects">Projects</button>
-        <button class="subHeader" id="demo">Demo</button>
+    <a class="skip-link" href="#about">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="wordmark" href="#about">Connor&nbsp;Flynn</a>
+            <nav aria-label="Sections">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <div id="profileSection" class="card">
-        <div class="innerCard">
-            <div class="circleContainer">
-                <img id="profilepic" src="84973a6a0915afa725b1.jpg"> <!-- Ensure image exists -->
+    <main>
+
+        <!-- ───────────────────────── About ───────────────────────── -->
+        <section id="about" class="section section--hero">
+            <div class="container hero">
+                <img class="avatar" src="84973a6a0915afa725b1.jpg" width="160" height="160"
+                     alt="Connor Flynn">
+                <div class="hero-text">
+                    <p class="eyebrow">Palo Alto, California</p>
+                    <h1>Connor Flynn</h1>
+                    <p class="lede">
+                        Software engineer building full-stack and mobile products.
+                    </p>
+                    <p>
+                        I'm a Junior Software Engineer at
+                        <strong>Recovery Database Network (OPENLANE)</strong>, where I ship features
+                        across two client-facing products in Angular, Flutter, and Firebase — plus the
+                        backend services, middleware, and end-to-end tests underneath them. On the side
+                        I'm technical lead on <a href="#wovyn">Wovyn</a>, a Flutter and Firebase reading
+                        platform now in TestFlight beta.
+                    </p>
+                    <p>
+                        I studied Computer Science &amp; Linguistics at the University of Illinois at
+                        Urbana-Champaign, graduating in May 2025.
+                    </p>
+                    <p class="hero-actions">
+                        <a class="button button--primary" href="#projects">See my work</a>
+                        <a class="button" href="https://github.com/cflynn19">GitHub</a>
+                        <a class="button" href="https://www.linkedin.com/in/connorflynn-dev/">LinkedIn</a>
+                    </p>
+                </div>
             </div>
-            <h1>Connor Flynn | My Portfolio</h1>
-            <h3 id="centerNeed">
-                Hello! My name is Connor and I am a Senior studying Computer Science at the 
-                University of Illinois at Urbana-Champaign. I am an aspiring Software Developer 
-                looking to make impacts in Full Stack Development.
-            </h3>
-        </div>
-    </div>
+        </section>
 
-    <div id="interestSection">
-        <h1 id="title"> My Interests </h1>
-        
-        <div class="info">
-            <button id="mlBtn" class="skill">
-                <div class="circleIcon">
-                    <i class="fa-solid fa-chart-line"></i>
-                </div>
-                <h1> Full Stack Development </h1>
-            </button>
-            <button id="dsBtn" class="skill">
-                <div class="circleIcon">
-                    <i class="fa-solid fa-database"></i>
-                </div>
-                <h1> Mobile App Development</h1>
-            </button>
-            <button id="wpBtn" class="skill">
-                <div class="circleIcon">
-                    <i class="fa-solid fa-code"></i>
-                </div>
-                <h1> Machine Learning </h1>
-            </button>
-        </div>
-    </div>
-
-    <div id="projectSection" class="card">
-        <div class="innerCard" id="sliderInnerCard">
-            <h1> My Projects </h1>
-            <div class="slider">
-
-                <div class="slide">
-                    <h1> Machine Learning Trading Strategy</h1>
-                    <p> Implemented and fine-tuned 2 Recurrent Neural Network (RNN) models in Python predicting the spot price of cryptocurrency 
-                        Spot ETFs</p>
-                    <p> Created a back testing script that streamlined historical IEX order book data into a data pipeline to simulate day trading, proving 
-                        the profitability of our trading strategy with both models for 100% of the 200 files tested</p>
-                    <p> Integrated ML Ops with the ML Flow API to enable efficient tracking, and visualization of past model runs, parameters, metrics, 
-                        and artifacts, which improved model management and reproducibility </p>
-                    <a href="https://gitlab.engr.illinois.edu/ie421_high_frequency_trading_spring_2024/ie421_hft_spring_2024_group_10/group_10_project"> GitLab </a>
-                </div>
-
-                <div class="slide">
-                    <h1> Planterra </h1>
-                    <p> Collaborated with a small team to develop and deploy on Heroku a full MERN (MondoDB, Express.js, React.js, Node.js) stack 
-                        web application leveraging the Perenual API to let users view specific details on their plants and receive plant-care notifications</p>
-                    <p> Utilized firebase authentication in conjunction with a MongoDB database to handle user login information and metadata securely, 
-                        ensuring industry best practices and data integrity policies were maintained</p>
-                    <p> Designed an intuitive and responsive user interface for the application that optimized user experience through modern design 
-                        principles, improved usability, and securing cross-platform compatibility </p>
-                </div>
-
-                <div class="slide">
-                    <h1> UIUC Apartment Finder</h1>
-                    <p> Produced a Node.js web application that enabled UIUC students and users to search through 150+ apartments in the Champaign 
-                        area based on over 20 different preference filters, allowing each user a unique and personalized experience</p>
-                    <p> Hosted and integrated a 5 table MySQL database that stored leasing, location, user, building, and distance information, while 
-                        building queries that handled all necessary CRUD operations in the application</p>
-                </div>
-
-                
-                <div class="slide">
-                    <h1> Recipe Web Application</h1>
-                    <p> Developed a Web Application that allowed users to find recipes based on an image or manually entered ingredients.</p>
-                    <p> Utilized the Spoonacular API and Google Cloud Vision API.</p>
-                    <p> Used Django framework.</p>
-                    <a href="https://github.com/cflynn19/Cooking-Recipe-Web-Application"> GitHub </a>
-                </div>
-                
-                <div class="slide">
-                    <h1> GitHub Social Network Graph</h1>
-                    <p> Implemented an undirected social network graph of over 37,000 GitHub users using C++ and CMake</p>
-                    <p> Two main goals in mind: group communities of users and provide users with a list of recommended users to follow</p>
-                    <p> Personally responsible with implementing the Girvan-Newman algorithm which created these groups of communities by removing edges, as well as creating test cases and test graphs for our BFS algorithm</p>
-                    <a href="https://github.com/eihart123/cs-225-final-project"> GitHub </a>
-                </div>
-
-                <div class="slide">
-                    <h1> NASA APOD UI</h1>
-                    <p> I created a new and improved UI for NASA's APOD data using React</p>
-                    <p>  Implemented multiple viewing screens for the collections of data and added unique endpoints for every image from the API</p>
-                    <p> Added search capabilities, as well as filters which allows users to find, filter, and sort images throughout different viewing screens</p>
-                </div>
-
-                <div class="slide">
-                    <h1> RESTful API </h1>
-                    <p> Designed a Node.js and Express.js RESTful API that maintained users and task information within a MongoDB database</p>
-                    <p> Included POST, PUT, DELETE, and GET routes for both Users and Tasks</p>
-                </div>
-
-                
-                <!-- <div id="titleSlide" class="slide"> -->
-                    <!-- <img src="assets/devicon.png"> -->
-                <!-- </div> -->
-
-                <button class="btn btn-next"></button>
-                <button class="btn btn-prev"></button>
+        <!-- ─────────────────────── Experience ────────────────────── -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <ol class="timeline">
+                    <li>
+                        <div class="timeline-role">
+                            <h3>Junior Software Engineer</h3>
+                            <p class="timeline-org">Recovery Database Network — OPENLANE · Remote</p>
+                        </div>
+                        <p class="timeline-when">Sept 2025 — Present</p>
+                        <p class="timeline-detail">
+                            Features across two client-facing products in Angular, Flutter/Dart, and
+                            Firebase. Built and integrated a new React web service into production,
+                            coordinating the rollout across existing frontends and Go services. Debug
+                            production issues end to end using Grafana, write unit and E2E tests, and
+                            review code.
+                        </p>
+                    </li>
+                    <li>
+                        <div class="timeline-role">
+                            <h3>Technical Lead</h3>
+                            <p class="timeline-org">Wovyn · Independent</p>
+                        </div>
+                        <p class="timeline-when">Aug 2025 — Present</p>
+                        <p class="timeline-detail">
+                            Architecture and delivery of a Flutter + Firebase reading platform —
+                            client, backend, recommendation jobs, and release pipeline.
+                        </p>
+                    </li>
+                    <li>
+                        <div class="timeline-role">
+                            <h3>Software Engineer Intern → Software Engineer</h3>
+                            <p class="timeline-org">Planter · Remote</p>
+                        </div>
+                        <p class="timeline-when">May 2024 — Sept 2025</p>
+                        <p class="timeline-detail">
+                            Led a backend migration from Firebase Realtime Database to Firestore —
+                            designed the collection schemas and wrote the data-restructuring scripts.
+                            Built personalization features for a gardening app with 100k+ monthly users,
+                            and stayed on part-time after the internship ended.
+                        </p>
+                    </li>
+                    <li>
+                        <div class="timeline-role">
+                            <h3>Course Assistant, CS222 Software Design Lab</h3>
+                            <p class="timeline-org">University of Illinois Urbana-Champaign</p>
+                        </div>
+                        <p class="timeline-when">Jan 2023 — May 2024</p>
+                        <p class="timeline-detail">
+                            Mentored student teams through full-stack projects, reviewed pull requests,
+                            and ran one-on-one debugging sessions.
+                        </p>
+                    </li>
+                    <li>
+                        <div class="timeline-role">
+                            <h3>Software Engineer Intern</h3>
+                            <p class="timeline-org">Vitesco Technologies · Chicago, IL</p>
+                        </div>
+                        <p class="timeline-when">May 2023 — Aug 2023</p>
+                        <p class="timeline-detail">
+                            Extended the CI/CD test pipeline with 27 new YAML jobs and 2 PowerShell
+                            scripts, brought C++ unit tests to 100% MC/DC coverage, and presented the
+                            results to 50+ engineers and leadership.
+                        </p>
+                    </li>
+                </ol>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <div id="videoSection">
-        <h1 id="videoTitle">Demo of Recipe Web Application</h1>
-        <video id="video" controls>  
-            <source src="c1daaf39b69e3b0eb555.mp4" type="video/mp4">
-        </video>
-    </div>
+        <!-- ───────────────────────── Projects ────────────────────── -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
 
-    <footer>
-        <div class="info">
-            <div class="footerInfo">
-                <h2> My Socials </h2>
-                <a href="https://www.linkedin.com/in/connor-flynn-253960228/" class="fa-brands fa-linkedin" id="linkedin"></a>
-                <a href="https://github.com/cflynn19" class="fa-brands fa-github" id="github"></a>
+                <div class="project-grid">
+
+                    <article class="project-card" id="wovyn">
+                        <div class="project-media">
+                            <img src="1d136028bf4132d85a78.png" class="media-phone"
+                                 alt="Wovyn reading statistics screen showing a monthly activity chart, pages read, and reading time">
+                        </div>
+                        <div class="project-body">
+                            <h3>Wovyn</h3>
+                            <p class="project-summary">
+                                A mobile reading platform — track sessions, discover books through a
+                                personalized ranked feed, and watch the habit build. Two-person
+                                production system: iOS and Android client, Firebase backend, scheduled
+                                recommendation jobs, and release pipeline. I led the architecture and
+                                wrote roughly 60% of the commits.
+                            </p>
+                            <ul class="project-points">
+                                <li>~45k lines of Dart across 33 feature modules and 24 Cloud Functions</li>
+                                <li>Feed ranked on eight bounded signals, then re-blended for diversity</li>
+                                <li>Reading sessions survive a cold kill — wall-clock timer, iOS Live Activity</li>
+                                <li>Offline-safe writes: client-generated document ids, deduped triggers</li>
+                                <li>Strict MVVM where nothing below the UI layer throws</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>Flutter</li><li>Dart</li><li>Firebase</li><li>Cloud Functions</li><li>Algolia</li>
+                            </ul>
+                            <p class="project-note">
+                                In TestFlight beta with 30+ testers. The Flutter app is a private
+                                commercial repo; the public one is the marketing site.
+                            </p>
+                            <p class="project-links">
+                                <a href="https://wovyn-landing.vercel.app/">Website</a>
+                                <a href="https://testflight.apple.com/join/ZqyGzZQX">TestFlight beta</a>
+                                <a href="https://github.com/cflynn19/wovyn">Site source</a>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="project-card" id="flow">
+                        <div class="project-media">
+                            <img src="a360c0ac225ead5146c9.png" class="media-fill"
+                                 alt="Flow showing a workflow execution: a node graph with a failed Send Email node and a timeline of overlapping node durations below it">
+                        </div>
+                        <div class="project-body">
+                            <h3>Flow</h3>
+                            <p class="project-summary">
+                                An open-source visual debugger for asynchronous workflows and agent
+                                systems. Build a graph, run it, and watch every node resolve live — then
+                                open any past run and see what it actually did: which branch was taken,
+                                what really ran in parallel, and what a retried node returned the third
+                                time.
+                            </p>
+                            <ul class="project-points">
+                                <li>Token-based graph traversal — joins, branch pruning, and loops from one rule</li>
+                                <li>Real concurrency; tests assert branches genuinely overlap</li>
+                                <li>Events persisted before broadcast, so SSE reconnect resumes with no gap</li>
+                                <li>One reducer drives both the live and the historical view</li>
+                                <li>Seeded runs reproduce exactly; 76 tests against real PostgreSQL</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>TypeScript</li><li>React 19</li><li>Fastify</li><li>PostgreSQL</li><li>Drizzle</li><li>Zod</li>
+                            </ul>
+                            <p class="project-note">
+                                MIT licensed. Runs locally against your own Postgres — the seed data
+                                ships failures, retries, and anomalies so it looks lived-in immediately.
+                            </p>
+                            <p class="project-links">
+                                <a href="https://github.com/cflynn19/Flow">GitHub</a>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="project-card" id="port-doctor">
+                        <div class="project-media project-media--terminal">
+<pre aria-hidden="true"><span class="t-dim">$</span> port-doctor 3000
+<span class="t-red">✖</span> Port 3000 is occupied
+
+  PID        48192
+  Process    node
+  Command    next dev
+  Age        2h 14m
+  Listening  *:3000 (tcp)
+
+  Kill it? [y/N]</pre>
+                        </div>
+                        <div class="project-body">
+                            <h3>port-doctor</h3>
+                            <p class="project-summary">
+                                A zero-dependency CLI for the <code>EADDRINUSE</code> moment. Tells you
+                                exactly what is holding a port — process, command, user, how long it has
+                                been there — and offers to kill it, instead of sending you back to the
+                                <code>lsof | xargs kill</code> dance.
+                            </p>
+                            <ul class="project-points">
+                                <li>One scan whatever you ask for — a test asserts 500 ports still costs two calls</li>
+                                <li>Refuses to signal anything in its own parent chain, even under <code>--force</code></li>
+                                <li>Sends <code>SIGTERM</code> and waits before it ever escalates to <code>SIGKILL</code></li>
+                                <li>Re-reads the port before signalling, so a recycled PID is never killed</li>
+                                <li>JSON output and honest exit codes, for use in a <code>predev</code> script</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>Node.js</li><li>CLI</li><li>Zero dependencies</li>
+                            </ul>
+                            <p class="project-note">
+                                47 tests, no test framework. CI runs them on macOS, Linux, and Windows
+                                across Node 18, 20, and 22 — including a job that deletes
+                                <code>lsof</code> to exercise the <code>ss</code> fallback.
+                            </p>
+                            <p class="project-links">
+                                <a href="https://github.com/cflynn19/port-doctor">GitHub</a>
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <h3 class="subsection-title">Also built</h3>
+                <ul class="also-built">
+                    <li>
+                        <strong>ML Trading Strategy</strong> — two RNN models predicting crypto spot
+                        prices, backtested against historical IEX order-book data with MLflow tracking
+                        every run.
+                        <a href="https://gitlab.engr.illinois.edu/ie421_high_frequency_trading_spring_2024/ie421_hft_spring_2024_group_10/group_10_project">GitLab</a>
+                    </li>
+                    <li>
+                        <strong>Planterra</strong> — MERN plant-care app on Heroku, wrapping the Perenual
+                        API with Firebase auth and care notifications.
+                    </li>
+                    <li>
+                        <strong>UIUC Apartment Finder</strong> — Node.js search over 150+ Champaign
+                        apartments with 20+ filters on a five-table MySQL schema.
+                    </li>
+                    <li>
+                        <strong>Recipe Web Application</strong> — Django app that finds recipes from a
+                        photo of your ingredients, via Google Cloud Vision and Spoonacular.
+                        <a href="https://github.com/cflynn19/Cooking-Recipe-Web-Application">GitHub</a>
+                    </li>
+                    <li>
+                        <strong>GitHub Social Network Graph</strong> — C++ graph of 37,000+ GitHub users;
+                        I implemented Girvan–Newman community detection and the BFS test suite.
+                        <a href="https://github.com/eihart123/cs-225-final-project">GitHub</a>
+                    </li>
+                    <li>
+                        <strong>NASA APOD UI</strong> — a React front end for NASA's Astronomy Picture of
+                        the Day archive, with per-image routes, search, filtering, and sorting.
+                    </li>
+                </ul>
             </div>
-            <div class="footerInfo">
-                <h2> Contact Me: </h2>
-                <a href="mailto:cjflynn2@illinois.edu" id="email">cjflynn2@illinois.edu</a>
+        </section>
+
+        <!-- ───────────────────────── Contact ─────────────────────── -->
+        <section id="contact" class="section section--contact">
+            <div class="container contact">
+                <h2 class="section-title">Get in touch</h2>
+                <p class="lede">
+                    Happy to talk about any of the above — especially Flutter, Firebase, or
+                    what Flow taught me about debugging distributed work.
+                </p>
+                <p class="contact-links">
+                    <a href="mailto:connorflynn31@gmail.com">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i> connorflynn31@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/connorflynn-dev/">
+                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/cflynn19">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+                    </a>
+                </p>
             </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Connor Flynn</p>
         </div>
     </footer>
 
-    
 <script defer src="bundle.js"></script></body>
 </html>
-
-
-
